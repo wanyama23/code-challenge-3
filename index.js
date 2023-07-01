@@ -1,3 +1,5 @@
+const url = "https://github.com/wanyama23/code-challenge-3"
+
 document.addEventListener('DOMContentLoaded',()=>{
 
     const moviePlaceHolder = ()=>{
@@ -102,32 +104,32 @@ document.addEventListener('DOMContentLoaded',()=>{
 
                             availTickets.innerText = `Tickets available: (${ticket})`
                         }
-                        // availTickets.innerText = `Tickets available: ${ticket}`
-                        // while(ticket> -1){
-                        //     availTickets.innerText = `Tickets available: ${ticket}`
-                        //     if(ticket === 0){
-                        //         return availTickets.innerText = "SOLD OUT"
-                        //     }
+                        availTickets.innerText = `Tickets available: ${ticket}`
+                        while(ticket> -1){
+                            availTickets.innerText = `Tickets available: ${ticket}`
+                            if(ticket === 0){
+                                return availTickets.innerText = "SOLD OUT"
+                            }
 
-                        // }
-
-
+                        }
 
 
-                        // if(ticket === 0){
-                        //     return availTickets.innerText = "SOLD OUT"
-                        // }
-
-                        // for(let i = ticket; i > -1 ; i-=1 ){
-
-                        //     const ticketRemain = i
-                        //     availTickets.innerText = `Tickets available: ${ticketRemain}`
-                        //     if(ticketRemain === 0){
-                        //         availTickets.innerText = "SOLD OUT"
-                        //     }
 
 
-                        // }
+                        if(ticket === 0){
+                            return availTickets.innerText = "SOLD OUT"
+                        }
+
+                        for(let i = ticket; i > -1 ; i-=1 ){
+
+                            const ticketRemain = i
+                            availTickets.innerText = `Tickets available: ${ticketRemain}`
+                            if(ticketRemain === 0){
+                                availTickets.innerText = "SOLD OUT"
+                            }
+
+
+                        }
 
 
                     })
