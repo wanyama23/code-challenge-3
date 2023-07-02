@@ -1,4 +1,4 @@
-const url = "https://github.com/wanyama23/code-challenge-3"
+const url = "http://localhost:3000/films"
 
 document.addEventListener('DOMContentLoaded',()=>{
 
